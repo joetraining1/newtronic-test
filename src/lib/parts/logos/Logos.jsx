@@ -11,7 +11,7 @@ const Logos = ({ url }) => {
       style={{
         ...FlexBasic,
         height: Singles.height,
-        width: isMobile ? "35%" : isTab ? "40%" : "15%",
+        width: isMobile ? "35%" : isTab ? "30%" : "15%",
         cursor: 'pointer',
       }}
       onClick={() => {

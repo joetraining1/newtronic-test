@@ -17,7 +17,7 @@ const MainLayout = ({ data, children }) => {
         paddingTop: isMobile
           ? Singles.marginMobile
           : isTab
-          ? Singles.marginMobile
+          ? Singles.marginTab
           : Singles.marginTopBody,
         backgroundColor: color.white,
         justifyContent: "flex-start",

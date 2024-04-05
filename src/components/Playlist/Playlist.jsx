@@ -16,8 +16,9 @@ const Playlist = ({ data }) => {
         width: "100%",
         height: "100%",
         flexDirection: "column",
-        padding: isMobile ? "10% 0" : 0,
-        gap: isMobile ? "2em" : 0,
+        padding: isMobile || isTab ? "10% 0" : 0,
+        gap: isMobile || isTab ? "2em" : 0,
+        alignItems: 'center'
       }}
     >
       {data.map((item, index) => {

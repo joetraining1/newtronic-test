@@ -26,6 +26,7 @@ const Footer = ({ logo }) => {
           alignItems: 'center',
           flexDirection: isMobile ? "column" : 'row',
           gap: "1vw",
+          padding: isTab ? "0 10px" : 0
         }}
       >
         <img

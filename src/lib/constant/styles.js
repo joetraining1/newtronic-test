@@ -11,6 +11,7 @@ export const Container = {
 export const Singles = {
     marginTopBody: '6vh',
     marginMobile: '10vh',
+    marginTab: '6vh',
     textShadow: `2px 2px 3px ${color.prime}`,
     height: '100%',
     width: '100%'

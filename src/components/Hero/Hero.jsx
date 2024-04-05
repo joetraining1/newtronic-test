@@ -21,7 +21,7 @@ const Hero = ({ data }) => {
         backgroundPositionX: "center",
         backgroundPositionY: "50%",
         boxShadow: "0px 10px 10px -10px rgba(0,0,0,0.5)",
-        paddingTop: "5vh",
+        paddingTop: isMobile ? "5vh" : isTab ? "15vh" : "5vh",
       }}
     >
       <div
@@ -46,7 +46,7 @@ const Hero = ({ data }) => {
           {Titler(data.title)}
         </Typography>
         <Typography
-          variant="h5"
+          variant={isMobile ? "h6" : "h5"}
           sx={{
             ...Font,
             color: color.white,

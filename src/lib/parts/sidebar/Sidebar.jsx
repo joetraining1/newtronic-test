@@ -33,7 +33,11 @@ const Sidebar = ({ menus }) => {
         }}
         onClick={() => handleOpen()}
       >
-        <MenuRounded />
+        <MenuRounded
+          sx={{
+            fontSize: isMobile ? "32px" : isTab ? "54px" : "2vw",
+          }}
+        />
       </Button>
       <Drawer
         open={isOpen}
@@ -56,12 +60,16 @@ const Sidebar = ({ menus }) => {
             />
           );
         })}
-        <Button variant="contained" sx={{
-            marginTop: 'auto',
-            marginBottom: '10%',
-            marginX: 'auto',
-            width: '50%'
-        }} onClick={() => handleClose()}>
+        <Button
+          variant="contained"
+          sx={{
+            marginTop: "auto",
+            marginBottom: "10%",
+            marginX: "auto",
+            width: "50%",
+          }}
+          onClick={() => handleClose()}
+        >
           Close
         </Button>
       </Drawer>

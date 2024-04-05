@@ -25,12 +25,12 @@ const Topbar = ({ logo, datas }) => {
     >
       <div
         style={{
-          width: isMobile ? "400px" : isTab ? "100%" : "1280px",
+          width: isMobile ? "100%" : isTab ? "100%" : "1280px",
           height: "100%",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          padding: `0 ${isMobile ? '5%' : 0}`
+          padding: `0 ${isMobile || isTab ? '5%' : 0}`
         }}
       >
         <Logos url={logo} />

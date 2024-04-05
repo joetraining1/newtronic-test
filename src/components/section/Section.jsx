@@ -18,7 +18,7 @@ const Section = ({ data }) => {
       id={Splitter(data.title)}
       style={{
         width: isMobile ? "100%" : isTab ? "100%" : display.laptop,
-        height: isMobile ? "100%" : "100vh",
+        height: isMobile ? "100%" : isTab ? "100%" : "100vh",
         ...FlexBasic,
         flexDirection: "column",
         gap: isMobile ? "1em" : "1vw",
@@ -68,7 +68,7 @@ const Section = ({ data }) => {
           variant="contained"
           sx={{ ...Font }}
           onClick={() =>
-            fileDownloader(data.url, `${Splitter(data.title)}.png}`)
+            fileDownloader(data.url, `${Splitter(data.title)}.png`)
           }
         >
           {`unduh gambar`}
